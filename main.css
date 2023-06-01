@@ -1,10 +1,7 @@
 body {
-    background: rgb(252,176,69);
     background: linear-gradient(125deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 85%);
-
     margin: 0;
     padding: 0;
-
     height: 100vh;
 
     display: flex;
@@ -14,8 +11,10 @@ body {
 
 .card-body {
     background-color: #FFF;
-    width: 800px;
-    height: 370px;
+    width: 40vw;
+    height: 40vh;
+    min-width: 360px;
+    min-height: 340px;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -23,12 +22,13 @@ body {
 }
 
 .logo {
-    width: 280px;
-    height: 280px;
+    width: 15vw;
+    height: 30vh;
+    min-width: 150px;
     border-radius: 20px;
     position: absolute;
     margin-left: -5%;
-    background: rgb(252,176,69);
+    box-shadow: 10px 10px 10px 10px rgba(255, 154, 60, 0.3);
     background: linear-gradient(158deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 61%);
 }
 
@@ -70,10 +70,14 @@ button {
     text-transform: uppercase;
     width: 160px;
     height: 40px;
-    background: rgb(252,176,69);
-    background: linear-gradient(121deg, rgba(252,176,69,1) 10%, rgba(253,29,29,1) 63%);
+    background: linear-gradient(120deg, rgba(250,175,70,1) 10%, rgba(253,30,30,1) 60%);
     font-family: Tahoma, sans-serif;
     font-weight: bolder;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 3px 3px 3px 3px #00000040;
 }
 
 h3, p {
