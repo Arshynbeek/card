@@ -89,3 +89,46 @@ h3, h2, p {
     padding: 0;
     font-family: Tahoma, sans-serif;
 }
+
+@media screen and (max-width: 1000px) {
+    .card-body {
+        width: 80vw;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        background-repeat: no-repeat;
+        min-width: 370px;
+    }
+
+    .logo {
+        width: 60vw;
+        padding: initial;
+        position: absolute;
+        top: -5%;
+        margin-left: initial;
+        min-width: 220px;
+    }
+
+    .details {
+        max-width: 75vw;
+        margin: 10%;
+        padding: 5% 0;
+        margin-top: 25%;
+        text-align: center;
+        min-width: 250px;
+    }
+
+    .components {
+        margin: 2%;
+        right: initial;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .oval {
+        width: 25px;
+        height: 10px;
+        margin: 0 10px;
+    }
+}
